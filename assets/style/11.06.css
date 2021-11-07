@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display+SC:ital@0;1&family=Sacramento&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #1d1a19;
+  font-size: 21px;
+  font-family: "Alice", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display SC", serif;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Sacramento", cursive;
+}
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0;
+}
+
+.header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0;
+}
+
+.header .logo__black {
+  width: 50px;
+  margin: 0 10px;
+}
+
+.header .logo .shopTitle {
+  color: #000;
+  letter-spacing: .5em;
+  font-weight: normal;
+  font-size: 11.5px;
+}
+
+.header .cart {
+  padding: 0 1rem;
+}
+
+@media (min-width: 992px) {
+  .header {
+    display: none;
+  }
+}
+
+.header--desktop {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+}
+
+.header--desktop .header-title {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 3rem;
+  border-bottom: 1px solid white;
+  color: white;
+  padding: 10px 2rem;
+  font-size: 16px;
+  font-family: "Alice", serif;
+}
+
+.header--desktop .header-title li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header--desktop .header-title li:hover {
+  cursor: pointer;
+  color: #c7d93b;
+}
+
+.header--desktop .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: white;
+  padding: 0 2rem;
+  height: 80px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header--desktop .logo .logo-white {
+  width: 130px;
+  padding-top: 2rem;
+}
+
+.header--desktop .logo .logo-title {
+  letter-spacing: .3em;
+}
+
+.header--desktop .logo:hover {
+  cursor: pointer;
+  color: #c7d93b;
+}
+
+@media (min-width: 992px) {
+  .header--desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://cdn.shopify.com/s/files/1/0261/4687/t/7/assets/img_homepage_slider1.jpg?v=839847293968337857);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0;
+  color: white;
+  text-align: center;
+}
+
+.hero .h1 {
+  font-family: "Playfair Display SC", serif;
+  font-size: 6rem;
+  font-weight: normal;
+  border-bottom: 1px solid white;
+  font-style: italic;
+}
+
+@media (max-width: 998px) {
+  .hero .h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 772px) {
+  .hero .h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .hero .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.hero .h3 {
+  font-family: "Sacramento", cursive;
+  font-size: 3.5rem;
+  font-weight: normal;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media (max-width: 998px) {
+  .hero .h3 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 772px) {
+  .hero .h3 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .hero .h3 {
+    font-size: 3rem;
+  }
+}
+
+.hero .h3:hover {
+  cursor: pointer;
+  color: #c7d93b;
+}
+
+.main {
+  width: 100%;
+}
+
+.main .section {
+  width: 100%;
+  height: 100vh;
+}
+
+.main .section .section-header {
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0;
+}
+
+.main .section .section-header h2 {
+  font-size: 12px;
+  letter-spacing: .5em;
+  color: #444;
+  font-weight: normal;
+}
+
+.main .section .section-header h1 {
+  font-size: 2rem;
+  font-family: "Playfair Display SC", serif;
+  color: #1d1a19;
+  font-style: italic;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #1d1a19;
+  font-weight: normal;
+}
+
+.main .section .section-header p {
+  font-size: 18px;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 500;
+}
+/*# sourceMappingURL=11.06.css.map */

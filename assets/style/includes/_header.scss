@@ -1,0 +1,70 @@
+.header {
+    width: 100%;
+    background-color: $white;
+    padding: 10px 0;
+    @include flex(row, space-between, center, 0);
+    .logo {
+        @include flex(row, space-between, center, 0);
+        &__black {
+            width: 50px;
+            margin: 0 10px;
+        }
+        .shopTitle {
+            @include shopTitle($black);
+        }
+    }
+
+    .cart {
+        padding: 0 1rem;
+    }
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+
+.header--desktop {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    .header-title {
+        list-style: none;
+        @include flex(row, center, flex-end, 3rem);
+        border-bottom: 1px solid white;
+        color: white;
+        padding: 10px 2rem;
+        font-size: 16px;
+        font-family: $alice;
+        li {
+            transition: 0.3s;
+        }
+        li:hover {
+            cursor: pointer;
+            color: $hover
+        }
+    }
+    .logo {
+        @include flex(column, center ,center, 10px);
+        color: white;
+        padding: 0 2rem;
+        height: 80px;
+        transition: 0.3s;
+        .logo-white {
+            width: 130px;
+            padding-top: 2rem;
+        }
+        .logo-title {
+            letter-spacing: .3em;
+        }
+        &:hover {
+            cursor: pointer;
+            color: $hover;
+        }
+    }
+    @media (min-width: 992px) {
+        display: flex;
+    }
+}
